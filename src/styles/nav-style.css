@@ -1,0 +1,35 @@
+/* ! Navigation Styles */
+.navigation {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.navigation__logo h1 {
+  font-size: 2.3vw;
+  padding: 3vw;
+}
+
+.navigation__links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.navigation__links a {
+  text-decoration: none;
+  font-size: 1.4vw;
+  padding: 3vw;
+  transition: transform 0.3s ease;
+}
+
+.navigation__links a:hover {
+  cursor: pointer;
+  text-shadow: 0 0.1vw 0.8vw #fd7e14;
+  transition: 0.4s ease;
+  transform: translateY(-0.2vw);
+  /* ? slightly lifts upwards.*/
+}
+

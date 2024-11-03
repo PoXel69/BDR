@@ -1,0 +1,88 @@
+/* ! Hero Section Styles */
+.hero {
+  /*min-width: 100vh;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 10rem;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0 6vw;
+  border-radius: 1em;
+  background: var(--divs-bgcolor);
+}
+
+.hero__text,
+.hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__heading,
+.hero__description {
+  width: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0 2rem 2rem;
+  text-align: center;
+  font-size: 150%;
+  font-weight: 200;
+}
+
+.hero__image img {
+  border-radius: 1.5rem;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.hero__button {
+  background-color: #ffc0cb;
+  color: #007bff;
+  font-size: x-large;
+  border-radius: 2vh;
+  outline: none;
+  border: none;
+  margin: 0.25vw;
+  padding: 2vh;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero__button:hover {
+  background-color: #007bff;
+  color: #ffc0cb;
+  cursor: pointer;
+  /* ? Slightly increase the size */
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+
+    .hero__image {
+      order: 1;
+    }
+
+    .hero__text {
+      padding: 2rem;
+      order: 2;
+    }
+  }
+}
