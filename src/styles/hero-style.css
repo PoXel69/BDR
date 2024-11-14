@@ -12,8 +12,12 @@
   background: var(--divs-bgcolor);
 }
 
+
 .hero__text,
-.hero__image {
+.hero__image,
+.hero__heading,
+.hero__button,
+.hero__description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,15 +27,9 @@
 .hero__heading,
 .hero__description {
   width: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 2rem 0 2rem 2rem;
   text-align: center;
@@ -44,9 +42,6 @@
 }
 
 .hero__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 2rem 0;
 }
